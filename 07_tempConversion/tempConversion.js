@@ -6,6 +6,7 @@ const convertToCelsius = function(temp) {
   // divide response by 9
   response = ((temp - 32) *5)/9;
   // round response
+  response = Number(response.toFixed(1));
   // return response
   return response;
 };
