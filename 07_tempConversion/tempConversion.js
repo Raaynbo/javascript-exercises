@@ -18,7 +18,8 @@ const convertToFahrenheit = function(temp) {
   // divide response by 5
   // add 32 to response
   response = ((temp * 9)/5)+32; 
-  // round response
+  // round response 
+  response = Number(response.toFixed(1));
   // return response
   return response;
 };
