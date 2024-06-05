@@ -11,7 +11,16 @@ const convertToCelsius = function(temp) {
   return response;
 };
 
-const convertToFahrenheit = function() {
+const convertToFahrenheit = function(temp) {
+  // create an integer variable init with 0 called response
+  let response = 0;
+  // multiply response by 9
+  // divide response by 5
+  // add 32 to response
+  response = ((temp * 9)/5)+32; 
+  // round response
+  // return response
+  return response;
 };
 
 // Do not edit below this line
