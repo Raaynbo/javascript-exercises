@@ -6,8 +6,10 @@ const subtract = function(a, b) {
 	return a-b;
 };
 
-const sum = function() {
-	
+const sum = function(data) {
+    return data.reduce((tot, value) => {
+      return tot + value;
+    }, 0);
 };
 
 const multiply = function() {
