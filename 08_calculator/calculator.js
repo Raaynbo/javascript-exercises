@@ -29,6 +29,11 @@ const power = function(value, pow) {
   }
   result = data.reduce((tot, value)=> {return tot*value}, 1);
   return result;
+  // ----solution----
+  // I didn't use the Math library in my answer, tried to made my own;
+  // Fast and easiest answer is 
+  // 
+  // return Math.pow(a, b);
 };
 
 const factorial = function(value) {
@@ -41,6 +46,17 @@ const factorial = function(value) {
     result = data.reduce((tot, value)=> {return tot*value;}, 1);
   }
   return result;
+  // ----other solution---
+  // Do not use array to answer
+  // Only a for loop where  I multiply the product by a decremented value until it equals zero;
+  // if (value === 0){
+  // return 1;
+  // }
+  // let result =1;
+  // for (let i = n; i > 0; i--){
+  //  result *= i;
+  // }
+  // return value;
 };
 
 // Do not edit below this line
