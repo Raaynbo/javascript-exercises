@@ -1,18 +1,14 @@
 const palindromes = function (input) {
   // function has 1 argument, called input, it's a string
   // sanitize "input" lowercase + remove punctuation
+  const regexp = /[a-z0-9]/g;
   // create a array variable called inputArray;
-  const inputArray = Array.from(input);
+  let lCase = input.toLowerCase().split("").filter(char => char.match(regexp)).join("");
   // create a string variable called "reverse" initialized with the reverse string of input
-  const reverse = inputArray.reverse();
-  console.log(reverse);
-  // create a boolean variable called isPalindrome set to false;
-  let isPalindrome = false;
   // compare reverse and input if equals set isPalindrome to true;
-  if (inputArray === reverse){
-  isPalindrome = true ;
-  }
-  return isPalindrome;
+  const reverse = lCase.split("").reverse().join("");
+
+  return reverse === lCase;
   // return isPalindrome;
 
   
